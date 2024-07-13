@@ -3,15 +3,10 @@
  */
 
 .overlayed {
+    position: relative;
     margin-top: -40px;
+    margin-bottom: -40px;
     z-index: 2;
-    position: relative;
-}
-
-.overlayed2 {
-    margin-top: -40px;
-    z-index: -1;
-    position: relative;
 }
 
 .comment {
@@ -21,6 +16,8 @@
     margin-bottom: 10px;
     padding: 20px;
 }
+
+
 
 @media (max-width: 480px) {
     .wp-block-navigation__responsive-container {
@@ -38,3 +35,31 @@
     }
 }
 
+@media (min-width: 481px) {
+    .wp-block-navigation__responsive-container > div > div > div > ul > li {
+        border-radius: 10px;
+        padding: 10px 15px;
+        font-weight: bold!important;
+        background-color: lightblue!important;
+        line-height: 1;
+    }
+    .wp-block-navigation__responsive-container > div > div > div > ul > li:hover {
+        background-color: blue!important;
+        color: white;
+    }
+
+    .wp-block-navigation__responsive-container  form  div.wp-block-search__inside-wrapper  > button {
+        color: black;
+        border-radius: 10px;
+        padding: 6px 10px;
+        margin: 0 0;
+        line-height: 1;
+        background-color: lightblue!important;
+    }
+
+    .wp-block-navigation__responsive-container  form  div.wp-block-search__inside-wrapper > button:hover {
+        background-color: blue!important;
+        color: white;
+    }
+
+}

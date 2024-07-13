@@ -4,7 +4,7 @@
 		"custom": {
 			"backgroundcolor": "#fafafa"
 		},
-		"useRootPaddingAwareAlignments": true,
+		"useRootPaddingAwareAlignments": false,
 		"appearanceTools": true,
 		"layout": {
 			"contentSize": "980px",
@@ -92,6 +92,45 @@
 					]
 				}
 			],
+			"fluid": true,
+			"fontSizes": [
+				{
+					"size": ".875rem",
+					"fluid": {
+						"min": "0.875rem",
+						"max": "1rem"
+					},
+					"slug": "small",
+					"name": "Small"
+				},
+				{
+					"size": "1.5rem",
+					"fluid": {
+						"min": "1.25rem",
+						"max": "1.75rem"
+					},
+					"slug": "normal",
+					"name": "Normal"
+				},
+				{
+					"size": "1.75rem",
+					"fluid": {
+						"min": "1.75rem",
+						"max": "2.25rem"
+					},
+					"slug": "large",
+					"name": "Large"
+				},
+				{
+					"size": "2.5rem",
+					"fluid": {
+						"min": "2.5rem",
+						"max": "2.75rem"
+					},
+					"slug": "x-large",
+					"name": "Extra large"
+				}
+			],
 			"customFontSize": true,
 			"dropCap": true,
 			"fontStyle": true,
@@ -110,8 +149,8 @@
 		"spacing": {
 			"blockGap": null,
 			"customSpacingSize": true,
-			"margin": false,
-			"padding": false,
+			"margin": true,
+			"padding": true,
 			"spacingScale": {
 				"operator": "*",
 				"increment": 1.5,
@@ -131,6 +170,7 @@
 		"typography": {
 			"fontFamily": "Montserrat",
 			"fontSize": "18px",
+			"lineHeight": "1.7",
 			"fontWeight": "400",
 			"letterSpacing": "normal"
 		},
@@ -138,13 +178,13 @@
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "Raleway",
-					"fontSize": "clamp( 24px, 36px, 36px )"
+					"fontSize": "large"
 				}
 			},
 			"core/post-title": {
 				"typography": {
 					"fontFamily": "Fredoka",
-					"fontSize": "36px"
+					"fontSize": "x-large"
 				}
 			},
 			"core/heading": {
@@ -153,13 +193,7 @@
 				}
 			},
 			"core/paragraph": {
-				"typography": {
-					"fontFamily": "Montserrat",
-					"fontSize": "18px",
-					"lineHeight": "1.7",
-					"fontWeight": "400",
-					"letterSpacing": "normal"
-				}
+				"typography": { }
 			}
 		}
 
