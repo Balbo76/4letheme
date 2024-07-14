@@ -1,9 +1,6 @@
 {
 	"version": 3,
 	"settings": {
-		"custom": {
-			"backgroundcolor": "#fafafa"
-		},
 		"useRootPaddingAwareAlignments": false,
 		"appearanceTools": true,
 		"layout": {
@@ -42,6 +39,26 @@
 					"slug": "secondary",
 					"color": "#E4D1D1",
 					"name": "Secondary"
+				},
+				{
+					"slug": "text",
+					"color": "#000000",
+					"name": "Text"
+				},
+				{
+					"slug": "background",
+					"color": "#fafafa",
+					"name": "BackGround"
+				},
+				{
+					"slug": "blu",
+					"color": "#78C9F8",
+					"name": "Blu"
+				},
+				{
+					"slug": "blu_hover",
+					"color": "#048BD9",
+					"name": "Blu Hover"
 				}
 			],
 			"gradients": [],
@@ -92,41 +109,29 @@
 					]
 				}
 			],
-			"fluid": true,
+			"fluid": false,
 			"fontSizes": [
 				{
 					"size": ".875rem",
-					"fluid": {
-						"min": "0.875rem",
-						"max": "1rem"
-					},
+					"fluid": false,
 					"slug": "small",
 					"name": "Small"
 				},
 				{
-					"size": "1.5rem",
-					"fluid": {
-						"min": "1.25rem",
-						"max": "1.75rem"
-					},
+					"size": "1rem",
+					"fluid": false,
 					"slug": "normal",
 					"name": "Normal"
 				},
 				{
-					"size": "1.75rem",
-					"fluid": {
-						"min": "1.75rem",
-						"max": "2.25rem"
-					},
+					"size": "1.5rem",
+					"fluid": false,
 					"slug": "large",
 					"name": "Large"
 				},
 				{
-					"size": "2.5rem",
-					"fluid": {
-						"min": "2.5rem",
-						"max": "2.75rem"
-					},
+					"size": "2rem",
+					"fluid": false,
 					"slug": "x-large",
 					"name": "Extra large"
 				}
@@ -164,8 +169,8 @@
 	},
 	"styles": {
 		"color": {
-			"text": "#000000",
-			"background": "var(--wp--custom--backgroundcolor)"
+			"text": "var(--wp--preset--color--text)",
+			"background": "var(--wp--preset--color--background)"
 		},
 		"typography": {
 			"fontFamily": "Montserrat",
@@ -178,13 +183,13 @@
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "Raleway",
-					"fontSize": "large"
+					"fontSize": "var(--wp--preset--font-size--large)"
 				}
 			},
 			"core/post-title": {
 				"typography": {
 					"fontFamily": "Fredoka",
-					"fontSize": "x-large"
+					"fontSize": "var(--wp--preset--font-size--x-large)"
 				}
 			},
 			"core/heading": {
