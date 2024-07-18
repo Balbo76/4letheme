@@ -59,6 +59,11 @@
 					"slug": "blu_hover",
 					"color": "#048BD9",
 					"name": "Blu Hover"
+				},
+				{
+					"slug": "orangio",
+					"color": "#ff8300",
+					"name": "Rancio"
 				}
 			],
 			"gradients": [],
@@ -109,31 +114,53 @@
 					]
 				}
 			],
-			"fluid": false,
+			"fluid": true,
+			"defaultFontSizes": false,
 			"fontSizes": [
 				{
-					"size": ".875rem",
-					"fluid": false,
+					"size": "12px",
+					"fluid": {
+						"min": "10px",
+						"max": "12px"
+					},
 					"slug": "small",
 					"name": "Small"
 				},
 				{
-					"size": "1rem",
-					"fluid": false,
+					"size": "18px",
+					"fluid": {
+						"min": "16px",
+						"max": "18px"
+					},
 					"slug": "normal",
 					"name": "Normal"
 				},
 				{
-					"size": "1.5rem",
-					"fluid": false,
+					"size": "2rem",
+					"fluid": {
+						"min": "1.75rem",
+						"max": "2.25rem"
+					},
 					"slug": "large",
 					"name": "Large"
 				},
 				{
-					"size": "2rem",
-					"fluid": false,
+					"size": "48px",
+					"fluid": {
+						"min": "36px",
+						"max": "48px"
+					},
 					"slug": "x-large",
 					"name": "Extra large"
+				},
+				{
+					"size": "3rem",
+					"fluid": {
+						"min": "2.75rem",
+						"max": "3.25rem"
+					},
+					"slug": "xx-large",
+					"name": "Really large"
 				}
 			],
 			"customFontSize": true,
@@ -141,18 +168,18 @@
 			"fontStyle": true,
 			"fontWeight": true,
 			"letterSpacing": true,
-			"lineHeight": false,
-			"textColumns": false,
+			"lineHeight": true,
+			"textColumns": true,
 			"textDecoration": true,
 			"textTransform": true,
-			"writingMode": false
+			"writingMode": true
 		},
 		"shadow": {
 			"defaultPresets": true,
 			"presets": [ ]
 		},
 		"spacing": {
-			"blockGap": null,
+			"blockGap": true,
 			"customSpacingSize": true,
 			"margin": true,
 			"padding": true,
@@ -174,7 +201,7 @@
 		},
 		"typography": {
 			"fontFamily": "Montserrat",
-			"fontSize": "18px",
+			"fontSize": "16px",
 			"lineHeight": "1.7",
 			"fontWeight": "400",
 			"letterSpacing": "normal"
@@ -182,14 +209,12 @@
 		"blocks": {
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "Raleway",
-					"fontSize": "var(--wp--preset--font-size--large)"
+					"fontFamily": "Raleway"
 				}
 			},
 			"core/post-title": {
 				"typography": {
-					"fontFamily": "Fredoka",
-					"fontSize": "var(--wp--preset--font-size--x-large)"
+					"fontFamily": "Fredoka"
 				}
 			},
 			"core/heading": {
@@ -203,7 +228,6 @@
 		}
 
 	},
-	"customTemplates": { },
 	"templateParts": [
 		{
 			"area": "header",
@@ -219,6 +243,18 @@
 			"area": "uncategorized",
 			"name": "sidebar",
 			"title": "Sidebar"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "page-no-title",
+			"title": "Page No Title",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "single-corso-arduino",
+			"title": "Single Corso Arduino",
+			"postTypes": [ "post" ]
 		}
 	],
 	"patterns": [ ]
