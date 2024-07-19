@@ -10,21 +10,21 @@ add_action( 'admin_enqueue_scripts', function (){
 });
 
 add_filter('wp_theme_json_data_default', function ($json){
-    error_log('wp_theme_json_data_default');
+    //error_log('wp_theme_json_data_default');
     return $json;
 });
 
 add_filter('wp_theme_json_data_blocks', function ($json){
-    error_log('wp_theme_json_data_blocks');
+    //error_log('wp_theme_json_data_blocks');
     return $json;
 });
 
 add_filter('wp_theme_json_data_theme', function ($json){
-    error_log('wp_theme_json_data_theme');
+    //error_log('wp_theme_json_data_theme');
     return $json;
 });
 
 add_filter('wp_theme_json_data_user', function ($json){
-    error_log('wp_theme_json_data_user');
+    //error_log('wp_theme_json_data_user');
     return $json;
 });
