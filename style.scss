@@ -55,12 +55,7 @@ nav.wp-block-navigation {
 }
 
 
-.wp-block-navigation__responsive-dialog {
-  padding: 20px 20px!important;
-}
-.wp-block-navigation__responsive-container-close {
-  margin-right: 15px!important;
-}
+
 
 @media (min-width: 600px) {
   nav.wp-block-navigation {
@@ -93,5 +88,18 @@ nav.wp-block-navigation {
         margin-bottom: 20px;
       }
     }
+  }
+}
+
+@media (max-width: 599px) {
+  .wp-block-navigation__responsive-dialog {
+    padding: 20px 20px!important;
+  }
+  .wp-block-navigation__responsive-container-close {
+    margin-right: 15px!important;
+  }
+  .navprincipale {
+    padding-left: 20px!important;
+    padding-right: 20px!important;
   }
 }

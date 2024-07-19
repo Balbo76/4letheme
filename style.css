@@ -4,7 +4,6 @@
 .overlayed {
   position: relative;
   margin-top: -40px;
-  margin-bottom: -40px;
   z-index: 2;
 }
 
@@ -44,14 +43,6 @@ nav.wp-block-navigation form.wp-block-search div.wp-block-search__inside-wrapper
   color: white;
 }
 
-.wp-block-navigation__responsive-dialog {
-  padding: 20px 20px !important;
-}
-
-.wp-block-navigation__responsive-container-close {
-  margin-right: 15px !important;
-}
-
 @media (min-width: 600px) {
   nav.wp-block-navigation ul.wp-block-navigation li.wp-block-navigation-item {
     height: 34px !important;
@@ -74,5 +65,17 @@ nav.wp-block-navigation form.wp-block-search div.wp-block-search__inside-wrapper
   nav.wp-block-navigation form.wp-block-search button.wp-block-search__button {
     padding: 0 10px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 599px) {
+  .wp-block-navigation__responsive-dialog {
+    padding: 20px 20px !important;
+  }
+  .wp-block-navigation__responsive-container-close {
+    margin-right: 15px !important;
+  }
+  .navprincipale {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
