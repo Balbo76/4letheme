@@ -20,6 +20,14 @@
   margin-bottom: 10px;
 }
 
+.corso-arduino-lessons > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.corso-arduino-lessons > ul > li {
+  margin-bottom: 5px;
+}
+
 nav.wp-block-navigation ul.wp-block-navigation {
   margin-bottom: 20px;
 }

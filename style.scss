@@ -21,6 +21,17 @@
   margin-bottom: 10px;
 }
 
+.corso-arduino-lessons {
+  > ul {
+    list-style-type: none;
+    padding-left: 0;
+    > li {
+      margin-bottom: 5px;
+    }
+  }
+
+}
+
 nav.wp-block-navigation {
 
   ul.wp-block-navigation {
@@ -92,6 +103,9 @@ nav.wp-block-navigation {
 }
 
 @media (max-width: 599px) {
+  .hide-mobile {
+    display: none;
+  }
   .wp-block-navigation__responsive-dialog {
     padding: 20px 20px!important;
   }

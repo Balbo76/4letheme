@@ -1,12 +1,36 @@
 <!-- wp:template-part {"slug":"header","theme":"4letheme","tagName":"header","area":"header"} /-->
 
 <!-- wp:group {"tagName":"main","align":"full","layout":{"type":"constrained"}} -->
-<main class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":""},"style":{"border":{"radius":"10px"},"spacing":{"padding":{"left":"20px","right":"20px","top":"40px","bottom":"40px"}}},"backgroundColor":"white","className":"overlayed","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group overlayed has-white-background-color has-background" style="border-radius:10px;padding-top:40px;padding-right:20px;padding-bottom:40px;padding-left:20px"><!-- wp:post-author-name /-->
+<main class="wp-block-group alignfull"><!-- wp:group {"metadata":{"name":""},"className":"overlayed","style":{"border":{"radius":"10px"},"spacing":{"padding":{"left":"20px","right":"20px","top":"40px","bottom":"40px"},"margin":{"bottom":"-60px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group overlayed has-white-background-color has-background" style="border-radius:10px;margin-bottom:-60px;padding-top:40px;padding-right:20px;padding-bottom:40px;padding-left:20px"><!-- wp:post-author {"showBio":true,"isLink":true} /-->
 
-        <!-- wp:post-author /-->
+        <!-- wp:separator -->
+        <hr class="wp-block-separator has-alpha-channel-opacity"/>
+        <!-- /wp:separator -->
 
-        <!-- wp:post-author-biography /--></div>
+        <!-- wp:group {"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group"><!-- wp:query {"queryId":15,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained"}} -->
+            <div class="wp-block-query"><!-- wp:post-template {"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"default","columnCount":3}} -->
+                <!-- wp:post-date {"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"fontSize":"small"} /-->
+
+                <!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"top":"0px","bottom":"20px"}}}} /-->
+                <!-- /wp:post-template -->
+
+                <!-- wp:query-pagination -->
+                <!-- wp:query-pagination-previous /-->
+
+                <!-- wp:query-pagination-numbers /-->
+
+                <!-- wp:query-pagination-next /-->
+                <!-- /wp:query-pagination -->
+
+                <!-- wp:query-no-results -->
+                <!-- wp:paragraph {"placeholder":"Aggiungi testo o blocchi da visualizzare quando la query non restituisce alcun risultato."} -->
+                <p>Nessun articolo per questo autore</p>
+                <!-- /wp:paragraph -->
+                <!-- /wp:query-no-results --></div>
+            <!-- /wp:query --></div>
+        <!-- /wp:group --></div>
     <!-- /wp:group --></main>
 <!-- /wp:group -->
 
