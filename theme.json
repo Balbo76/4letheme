@@ -225,6 +225,13 @@
 			"core/paragraph": {
 				"typography": { }
 			}
+		},
+		"elements": {
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
 		}
 
 	},
