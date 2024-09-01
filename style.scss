@@ -2,12 +2,15 @@
  * Theme Name: 4le.it FSE Theme
  */
 
+
+ //overlay del layout
 .overlayed {
   position: relative;
   margin-top: -40px;
   z-index: 2;
 }
 
+// Commenti
 .comment {
   border-radius: 10px;
   border: 5px solid #f0f0f0;
@@ -16,11 +19,51 @@
   padding: 20px;
 }
 
+// form commenti
+div.wp-block-post-comments-form {
+  textarea, input[type='text'], input[type='url'], input[type='email'], input[type='submit'] {
+    border-radius: 10px;
+  }
+  p.comment-form-cookies-consent {
+    input[type='checkbox']{
+      margin-top: -20px!important;
+    }
+  }
+  input[type='submit']{
+    width: 100%;
+    color: var(--wp--preset--color--white);
+    background-color: var(--wp--preset--color--blu-hover);
+    font-weight: bold;
+  }
+  input[type='submit']:hover {
+    color: var(--wp--preset--color--black);
+    background-color: var(--wp--preset--color--blu);
+  }
+}
+
+@media (min-width: 600px) {
+  div.wp-block-post-comments-form {
+    p.comment-form-cookies-consent {
+      input[type='checkbox']{
+        margin-top: -25px!important;
+      }
+      input[type='submit']{
+        width: 600px!important;
+      }
+      
+    }
+  } 
+}
+
+
+
+// Modifica a enlighter
 .enlighter-default {
   margin-top: 20px!important;
   margin-bottom: 20px;
 }
 
+// Sidebar elenco lezioni a destra
 .corso-arduino-lessons {
   > ul {
     list-style-type: none;
@@ -32,11 +75,15 @@
 
 }
 
+// Navigazione in alto
 nav.wp-block-navigation {
 
   ul.wp-block-navigation {
     margin-bottom: 20px;
     li.wp-block-navigation-item > a {
+      & > span {
+        padding: 10px 10px!important;
+      }
       line-height: 2!important;
       font-size: 24px!important;
       font-weight: bold;
@@ -52,18 +99,47 @@ nav.wp-block-navigation {
     }
 
     div.wp-block-search__inside-wrapper > button {
-      color: var(--wp--preset--color--black);
+      color: var(--wp--preset--color--white);
       border-radius: 10px;
-      background-color: var(--wp--preset--color--blu);
+      background-color: var(--wp--preset--color--blu-hover);
     }
 
     div.wp-block-search__inside-wrapper > button:hover {
-      background-color: var(--wp--preset--color--blu-hover)!important;
+      background-color: var(--wp--preset--color--blu)!important;
       color: white;
     }
   }
 
 }
+
+// Link navigazione articolo e paginazione
+div.wp-block-post-navigation-link {
+  max-width: 100%;
+  
+}
+a.wp-block-query-pagination-next, a.wp-block-query-pagination-previous, div.wp-block-post-navigation-link > a {
+  display: block;
+  max-width: 100%;
+  color: var(--wp--preset--color--black);
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background-color: var(--wp--preset--color--white);
+  border: 2px solid var(--wp--preset--color--blu);
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1;
+}
+a.wp-block-query-pagination-next:hover, a.wp-block-query-pagination-previous:hover, div.wp-block-post-navigation-link > a:hover {
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--blu);
+  font-weight: bolder;
+
+}
+
+
 
 
 
@@ -78,12 +154,13 @@ nav.wp-block-navigation {
           border-radius: 10px !important;
           padding: 3px 10px !important;
           font-weight: bold !important;
-          background-color: var(--wp--preset--color--blu) !important;
+          color: var(--wp--preset--color--white);
+          background-color: var(--wp--preset--color--blu-hover) !important;
           line-height: 1;
         }
         > a:hover {
-          background-color: var(--wp--preset--color--blu-hover) !important;
-          color: var(--wp--preset--color--white);
+          background-color: var(--wp--preset--color--blu) !important;
+          color: var(--wp--preset--color--black);
           font-weight: bolder;
         }
       }
@@ -111,7 +188,8 @@ nav.wp-block-navigation {
     padding: 20px 20px!important;
   }
   .wp-block-navigation__responsive-container-close {
-    margin-right: 15px!important;
+    margin-right: 25px!important;
+    margin-top: 25px!important;
   }
   .navprincipale {
     padding-left: 20px!important;

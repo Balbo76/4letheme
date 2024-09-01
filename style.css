@@ -15,6 +15,31 @@
   padding: 20px;
 }
 
+div.wp-block-post-comments-form textarea, div.wp-block-post-comments-form input[type=text], div.wp-block-post-comments-form input[type=url], div.wp-block-post-comments-form input[type=email], div.wp-block-post-comments-form input[type=submit] {
+  border-radius: 10px;
+}
+div.wp-block-post-comments-form p.comment-form-cookies-consent input[type=checkbox] {
+  margin-top: -20px !important;
+}
+div.wp-block-post-comments-form input[type=submit] {
+  width: 100%;
+  color: var(--wp--preset--color--white);
+  background-color: var(--wp--preset--color--blu-hover);
+  font-weight: bold;
+}
+div.wp-block-post-comments-form input[type=submit]:hover {
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--blu);
+}
+
+@media (min-width: 600px) {
+  div.wp-block-post-comments-form p.comment-form-cookies-consent input[type=checkbox] {
+    margin-top: -25px !important;
+  }
+  div.wp-block-post-comments-form p.comment-form-cookies-consent input[type=submit] {
+    width: 600px !important;
+  }
+}
 .enlighter-default {
   margin-top: 20px !important;
   margin-bottom: 20px;
@@ -36,19 +61,48 @@ nav.wp-block-navigation ul.wp-block-navigation li.wp-block-navigation-item > a {
   font-size: 24px !important;
   font-weight: bold;
 }
+nav.wp-block-navigation ul.wp-block-navigation li.wp-block-navigation-item > a > span {
+  padding: 10px 10px !important;
+}
 nav.wp-block-navigation form.wp-block-search input.wp-block-search__input {
   border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
 nav.wp-block-navigation form.wp-block-search div.wp-block-search__inside-wrapper > button {
-  color: var(--wp--preset--color--black);
+  color: var(--wp--preset--color--white);
   border-radius: 10px;
-  background-color: var(--wp--preset--color--blu);
+  background-color: var(--wp--preset--color--blu-hover);
 }
 nav.wp-block-navigation form.wp-block-search div.wp-block-search__inside-wrapper > button:hover {
-  background-color: var(--wp--preset--color--blu-hover) !important;
+  background-color: var(--wp--preset--color--blu) !important;
   color: white;
+}
+
+div.wp-block-post-navigation-link {
+  max-width: 100%;
+}
+
+a.wp-block-query-pagination-next, a.wp-block-query-pagination-previous, div.wp-block-post-navigation-link > a {
+  display: block;
+  max-width: 100%;
+  color: var(--wp--preset--color--black);
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background-color: var(--wp--preset--color--white);
+  border: 2px solid var(--wp--preset--color--blu);
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1;
+}
+
+a.wp-block-query-pagination-next:hover, a.wp-block-query-pagination-previous:hover, div.wp-block-post-navigation-link > a:hover {
+  color: var(--wp--preset--color--black);
+  background-color: var(--wp--preset--color--blu);
+  font-weight: bolder;
 }
 
 @media (min-width: 600px) {
@@ -60,12 +114,13 @@ nav.wp-block-navigation form.wp-block-search div.wp-block-search__inside-wrapper
     border-radius: 10px !important;
     padding: 3px 10px !important;
     font-weight: bold !important;
-    background-color: var(--wp--preset--color--blu) !important;
+    color: var(--wp--preset--color--white);
+    background-color: var(--wp--preset--color--blu-hover) !important;
     line-height: 1;
   }
   nav.wp-block-navigation ul.wp-block-navigation li.wp-block-navigation-item > a:hover {
-    background-color: var(--wp--preset--color--blu-hover) !important;
-    color: var(--wp--preset--color--white);
+    background-color: var(--wp--preset--color--blu) !important;
+    color: var(--wp--preset--color--black);
     font-weight: bolder;
   }
   nav.wp-block-navigation form.wp-block-search button.wp-block-search__button, nav.wp-block-navigation form.wp-block-search input {
@@ -84,7 +139,8 @@ nav.wp-block-navigation form.wp-block-search div.wp-block-search__inside-wrapper
     padding: 20px 20px !important;
   }
   .wp-block-navigation__responsive-container-close {
-    margin-right: 15px !important;
+    margin-right: 25px !important;
+    margin-top: 25px !important;
   }
   .navprincipale {
     padding-left: 20px !important;
