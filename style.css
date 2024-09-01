@@ -45,6 +45,13 @@ div.wp-block-post-comments-form input[type=submit]:hover {
   margin-bottom: 20px;
 }
 
+.corso-arduino-lessons a:hover {
+  text-decoration: underline;
+}
+.corso-arduino-lessons > h3 {
+  margin-top: 0 !important;
+  font-weight: bolder;
+}
 .corso-arduino-lessons > ul {
   list-style-type: none;
   padding-left: 0;
