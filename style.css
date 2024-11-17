@@ -1,6 +1,10 @@
 /**
  * Theme Name: 4le.it FSE Theme
  */
+a:hover {
+  text-decoration: underline;
+}
+
 .overlayed {
   position: relative;
   margin-top: -40px;
@@ -129,6 +133,7 @@ a.wp-block-query-pagination-next:hover, a.wp-block-query-pagination-previous:hov
     background-color: var(--wp--preset--color--blu) !important;
     color: var(--wp--preset--color--black);
     font-weight: bolder;
+    text-decoration: none !important;
   }
   nav.wp-block-navigation form.wp-block-search button.wp-block-search__button, nav.wp-block-navigation form.wp-block-search input {
     height: 34px;

@@ -17,3 +17,11 @@ add_action('after_setup_theme', function (){
         return $theme_json;
     });
 });
+
+
+// Remove the decoding attribute from featured images and the Post Image block.
+add_filter( 'wp_get_attachment_image_attributes', function( $attributes ) {
+    unset( $attributes['decoding'] );
+    return $attributes;
+} );
+

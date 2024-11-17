@@ -2,6 +2,7 @@
  * Theme Name: 4le.it FSE Theme
  */
 
+ a:hover { text-decoration: underline; }
 
  //overlay del layout
 .overlayed {
@@ -169,6 +170,7 @@ a.wp-block-query-pagination-next:hover, a.wp-block-query-pagination-previous:hov
           background-color: var(--wp--preset--color--blu) !important;
           color: var(--wp--preset--color--black);
           font-weight: bolder;
+          text-decoration: none!important; 
         }
       }
 

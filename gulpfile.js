@@ -8,3 +8,4 @@ function scss() {
 }
 
 exports.scss = scss;
+exports.default = scss;
